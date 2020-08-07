@@ -1,0 +1,52 @@
+<h2>Content Projection</h2>
+
+  
+<!-- <div style="background-color:lavender;">
+  <h2>Content 1</h2>
+  <app-info name="Nguyễn Bùi Thội" address="Quận 9" [personNumber]="1"></app-info>
+</div>
+
+<div style="background-color:lavenderblush;">
+  <h2>Content 2</h2>
+ <app-info name="Nguyễn Minh Hiếu" address="Quận thủ đức" 
+ [personNumber]="2" [isAge]="true">
+ </app-info>
+</div> -->
+
+<div style="background-color:lavender;">
+  <h2>Content 1</h2>
+  <app-info>
+     <h3> Thông tin người 0</h3>
+
+      <label>
+      <strong>Họ và tên :</strong>  
+      Nguyễn Bùi Thội
+    </label>
+
+      <p> 
+      <strong>Địa chỉ :</strong> 
+      Quận 9
+    </p>
+  </app-info>
+</div>
+
+<div style="background-color:lavenderblush;">
+  <h2>Content 2</h2>
+ <app-info>
+  <h3> Thông tin người 0</h3>
+
+      <label class="thoi1">
+      <strong>Họ và tên :</strong>  
+      Nguyễn Bùi Thội
+    </label>
+
+      <p> 
+      <strong>Địa chỉ :</strong> 
+      Quận 9
+    </p>
+ </app-info>
+</div>
+
+<!-- <div style="background-color:lavenderblush;">
+   <app-info></app-info>
+</div> -->

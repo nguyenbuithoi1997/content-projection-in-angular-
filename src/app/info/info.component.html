@@ -1,0 +1,48 @@
+<!-- <div class="info">
+
+  <div class="info_header">
+    <h3> Thông tin người {{ personNumber }} </h3>
+  </div>
+
+  <div class="info_content">
+    <label>
+      <strong>Họ và tên :</strong>  
+      {{name}}
+    </label>
+  </div>
+
+  <div class="info_footer">
+    <p> 
+      <strong>Địa chỉ :</strong> 
+      {{address}}
+    </p>
+
+    <p *ngIf="isAge">
+     <strong>Số tuổi:</strong> 
+      18
+    </p>
+  </div>
+
+<div> -->
+
+  <div class="info">
+
+  <div class="info_header">
+    <ng-content select='h3'></ng-content>
+  </div>
+
+  <div class="info_content">
+   <ng-content select='.thoi1'></ng-content>
+  </div>
+
+  <div class="info_footer">
+    <ng-content></ng-content>
+
+    <!-- <p *ngIf="isAge">
+     <strong>Số tuổi:</strong> 
+      18
+    </p> -->
+  </div>
+
+<div>
+
